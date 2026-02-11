@@ -53,6 +53,7 @@ body {
     z-index: 1;
 }
 
+body::before,
 .page::before,
 .page::after {
     content: "";
@@ -67,26 +68,39 @@ body {
     background-size: contain;
 }
 
+body::before {
+    right: -40px;
+    bottom: -20px;
+    width: 320px;
+    height: 320px;
+    opacity: 0.12;
+    background-image: url("./paw.jpg"), url("./paw.jpg"), url("./paw.jpg");
+    background-size: 140px 140px, 110px 110px, 90px 90px;
+    background-position: 90% 75%, 65% 55%, 85% 35%;
+    transform: rotate(-6deg);
+}
+
 .page::before {
-    left: 20px;
-    top: 260px;
-    width: 160px;
-    height: 160px;
-    opacity: 0.06;
-    background-image: url("./bbe77b970e2e53f5e59204acc09e265e.jpg");
+    left: 24px;
+    top: 180px;
+    width: 200px;
+    height: 200px;
+    opacity: 0.08;
+    background-image: url("./cat.jpg");
 }
 
 .page::after {
-    right: -60px;
-    bottom: -20px;
-    width: 220px;
-    height: 220px;
-    opacity: 0.07;
+    right: -120px;
+    bottom: -40px;
+    width: 300px;
+    height: 300px;
+    opacity: 0.09;
     transform: rotate(2deg);
-    background-image: url("./k0130_10.jpg");
+    background-image: url("./dog.jpg");
 }
 
 @media (max-width: 900px) {
+    body::before,
     .page::before,
     .page::after {
         display: none;
@@ -94,6 +108,7 @@ body {
 }
 
 @media (max-width: 640px) {
+    body::before,
     .page::before,
     .page::after {
         display: none;

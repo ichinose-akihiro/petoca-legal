@@ -4,12 +4,19 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>Petoca ホーム</title>
+    <title>ホーム | Petoca</title>
+    <meta name="description" content="Petoca（ペトカ）公式サイト。プライバシーポリシー・利用規約・特定商取引法に基づく表記をご確認いただけます。" />
+    <link rel="icon" href="./assets/petoca-icon.png" />
+    <meta property="og:title" content="ホーム | Petoca" />
+    <meta property="og:description" content="Petoca（ペトカ）公式サイト。プライバシーポリシー・利用規約・特定商取引法に基づく表記をご確認いただけます。" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://ichinose-akihiro.github.io/petoca-legal/assets/petoca-icon.png" />
     <link rel="stylesheet" href="./assets/style.css" />
 </head>
 
 <body>
-    <div class="page">
+    <a class="skip-link" href="#main-content">本文へスキップ</a>
+    <div class="page" id="top">
         <header>
             <div class="brand">
                 <img src="./assets/petoca-icon.png" alt="Petoca アイコン" />
@@ -19,17 +26,17 @@
             <p class="lead">Petocaのご利用にあたっての重要な情報（プライバシーポリシー／利用規約／特商法表記）をまとめています。</p>
         </header>
 
-        <nav>
+        <nav aria-label="メインナビゲーション">
             <ul>
-                <li><a class="active" href="./index.html">ホーム</a></li>
+                <li><a class="active" aria-current="page" href="./index.html">ホーム</a></li>
                 <li><a href="./privacy.html">プライバシーポリシー</a></li>
                 <li><a href="./terms.html">利用規約</a></li>
                 <li><a href="./tokusho.html">特定商取引法に基づく表記</a></li>
             </ul>
         </nav>
 
-        <main>
-            <h1>Petoca ホーム</h1>
+        <main id="main-content">
+            <h1>ホーム</h1>
 
             <p>Petoca（ペトカ）は、ペットとの毎日を色で残せる日記アプリです。</p>
             <p>ペットごとのテーマカラーを登録して、写真と日記をカレンダーに思い出として追加できます。</p>

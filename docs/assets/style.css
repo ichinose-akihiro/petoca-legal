@@ -280,6 +280,14 @@ main li {
     color: var(--muted);
 }
 
+
+.copyright {
+    margin-top: 10px;
+    font-size: 12px;
+    color: var(--muted);
+    text-align: center;
+}
+
 footer {
     margin-top: 18px;
     color: var(--muted);
